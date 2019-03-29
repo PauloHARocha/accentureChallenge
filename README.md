@@ -4,7 +4,7 @@
 
 ## About
 
-A small series of evaluate knowledge in Machine Learning.
+A set of questions to evaluate knowledge in Machine Learning.
 
 # Librarys and packages
 

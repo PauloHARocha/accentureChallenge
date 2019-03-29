@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-
 from sklearn.preprocessing import MinMaxScaler
 from sklearn import preprocessing
 
@@ -78,7 +77,7 @@ for feature in features:
     std = MinMaxScaler()
     info_power[feature] = std.fit_transform(info_power[[feature]])
                                                           
-# Skin color - Because of the large number of missing data this feature was dropped
+# Skin color - Because of the large number of missing data this column was dropped
 feature = 'Skin color'
 info_power = info_power.drop(columns=feature)
 

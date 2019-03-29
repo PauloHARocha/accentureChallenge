@@ -4,7 +4,7 @@ from sklearn.feature_selection import SelectFromModel
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
 
-# Question 3
+# Question 4
 
 df = pd.read_csv('datasets/info_power_processed.csv')
 

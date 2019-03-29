@@ -43,7 +43,7 @@ info_power[feature] = le.fit_transform(info_power[feature])
 
 # In the next features, the categories that contained more information (more heroes) 
 # were kept and the rest along with the missing values ​​were grouped into a category 'other (name of feature)'.
-# And then each new category were transformed in a column of True or False, to avoid problems with euclidian distance
+# Then each new category were transformed in a column of True or False, to avoid bias with euclidian distance
 # Eye color / Race / Hair color / Publisher 
 features = ['Eye color', 'Race', 'Hair color', 'Publisher']
 new_columns = [['blue', 'brown', 'green', 'red'],
@@ -66,7 +66,7 @@ for feature, keep_features in zip(features, new_columns):
         info_power[kf] = (feat_column == kf)*1.0
 
 # In the next features the undefined values ​​were redefined with median of the feature data
-# And the normalized between 0 and 1, to avoid problems with euclidian distance
+# Then normalized between 0 and 1, to avoid bias with euclidian distance
 # Height / Weight
 features = ['Height', 'Weight']
 for feature in features:
